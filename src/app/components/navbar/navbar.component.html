@@ -1,12 +1,13 @@
 <header>
-    <nav class="navbar ">
-        <div >
-
-          <ul class="flex gap-4 w-full">
+    <nav class="navbar w-full px-20 py-5 font-extrabold text-xl">
+        <div class="grid grid-flow-col grid-cols-2 ">
+             <p class="w-full">N.D</p>
+          <ul class="flex justify-between w-full cursor-pointer">
          
-            <li [routerLink]="['/']">Home</li>
-            <li [routerLink]="['/about']">about</li>
-
+            <li [routerLink]="['/']">Inicio</li>
+            <li [routerLink]="['/cabañas']">Cabañas</li>
+            <li [routerLink]="['/experiencias']">Experiencias</li>
+            <li [routerLink]="['/contacto']">Contacto</li>
             
          
           </ul>

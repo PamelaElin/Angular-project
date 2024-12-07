@@ -1,0 +1,17 @@
+<section class="grid h-full w-full items-center justify-center">
+<app-card class="m-2" title="yhgc" imageUrl="assets/inicio.jpg"></app-card>
+
+
+@for (item of titles; track item.title) {
+    
+    <app-card  [title]="item.title" [imageUrl]="item.imageUrl"></app-card>
+    } 
+    
+
+
+
+</section>
+
+
+
+

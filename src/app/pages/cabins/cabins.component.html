@@ -1,14 +1,20 @@
-<section class="grid h-full w-full items-center justify-center">
-<app-card class="m-2" title="yhgc" imageUrl="assets/inicio.jpg"></app-card>
-
-
-@for (item of titles; track item.title) {
-    
-    <app-card  [title]="item.title" [imageUrl]="item.imageUrl"></app-card>
-    } 
-    
-
-
+<section class="flex h-full w-full items-center justify-center ">
+    <div class="grid justify-center mb-20 mt-32 text-white w-full px-52">
+        <h1 class="text-4xl  font-bold mb-4">Cabañas:</h1>
+        <p class="text-2xl mb-6">
+        Ofrecemos cabañas en los destinos más tranquilos y hermosos, ideales para desconectarte, disfrutar del deporte y reconectar con la naturaleza
+        </p>
+        <div class=" flex justify-center ">
+            
+            <div class="grid grid-cols-2 gap-20  ">
+    @for (item of titles; track item.title) {
+        
+        <app-card  [title]="item.title" [subtitle]="item.subtitle"  [text]="item.text" [imageUrl]="item.imageUrl" ></app-card>
+        } 
+            </div>
+        </div>
+        </div>
+  
 
 </section>
 

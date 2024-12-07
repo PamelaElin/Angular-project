@@ -10,7 +10,9 @@ export class CardComponent {
 
  
  title = input<string>();
- titles = input<string>();
+ subtitle = input<string>();
+ text = input<string>();
+
  imageUrl = input<string | undefined>();
 
 }

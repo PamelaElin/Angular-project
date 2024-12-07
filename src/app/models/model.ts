@@ -1,4 +1,7 @@
-export interface Cabins{
-    title: string,
-       imageUrl: string
- }
+export interface Cabins {
+    title: string;
+    subtitle: string;
+    text: string;
+    imageUrl: string;
+  }
+  

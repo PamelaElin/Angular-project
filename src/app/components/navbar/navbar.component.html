@@ -1,16 +1,31 @@
-<header >
-    <nav class="navbar w-full px-20 py-8 font-extrabold text-xl ">
-        <div class="grid grid-flow-col grid-cols-2 ">
-             <p class="w-full">N.D</p>
-          <ul class="flex justify-between w-full cursor-pointer">
-         
-            <li [routerLink]="['/']">Inicio</li>
-            <li [routerLink]="['/cabañas']">Cabañas</li>
-            <li [routerLink]="['/experiencias']">Experiencias</li>
-            <li [routerLink]="['/contacto']">Contacto</li>
-            
-         
-          </ul>
-        </div>
-      </nav>
+<header cl>
+  <nav class="navbar w-full px-6 py-4  text-white font-extrabold text-xl bg-black">
+    <div class="flex justify-between items-center ">
+      <!-- Logo -->
+      <p class="cursor-pointer" [routerLink]="['/']">N.D</p>
+
+      <!-- Menú hamburguesa (visible en móviles) -->
+      <button class="text-2xl lg:hidden " (click)="toggleMenu()">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <!-- Menú principal  -->
+      <ul class="hidden lg:flex justify-between space-x-8 cursor-pointer">
+        <li class="hover:border-b-4 hover:border-white" [routerLink]="['/']">Inicio</li>
+        <li class="hover:border-b-4 hover:border-white" [routerLink]="['/cabañas']">Cabañas</li>
+        <li class="hover:border-b-4 hover:border-white" [routerLink]="['/experiencias']">Experiencias</li>
+        <li class="hover:border-b-4 hover:border-white" [routerLink]="['/contacto']">Contacto</li>
+      </ul>
+    </div>
+
+    <!-- Menú móvil  -->
+    <div *ngIf="isMenuOpen" class="lg:hidden">
+      <ul class="space-y-4 text-center mt-4">
+        <li class="hover:border-b-4 hover:border-white" [routerLink]="['/']">Inicio</li>
+        <li class="hover:border-b-4 hover:border-white" [routerLink]="['/cabañas']">Cabañas</li>
+        <li class="hover:border-b-4 hover:border-white" [routerLink]="['/experiencias']">Experiencias</li>
+        <li class="hover:border-b-4 hover:border-white" [routerLink]="['/contacto']">Contacto</li>
+      </ul>
+    </div>
+  </nav>
 </header>

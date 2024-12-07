@@ -1,11 +1,10 @@
 .container{
   display: flex;
-    background-image: url('../../../../public/assets/inicio.jpg');
-    background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+    background: url('../../../../public/assets/inicio.jpg') center / cover no-repeat;
+
   height: 100vh; 
   width: 100vw;
+
 
   color: white;
 }

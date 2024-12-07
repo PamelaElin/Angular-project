@@ -8,7 +8,7 @@ import { Component, input, signal } from '@angular/core';
 })
 export class CardComponent {
 
- 
+
  title = input<string>();
  subtitle = input<string>();
  text = input<string>();

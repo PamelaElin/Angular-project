@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+      background: url('../../../../public/assets/inicio.jpg') center / cover no-repeat;
+ 
+    height: 100%; 
+  
+  
+    color: white;
+  }

@@ -10,7 +10,7 @@
       </button>
 
       <!-- Menú principal  -->
-      <ul class="hidden lg:flex justify-between space-x-8 cursor-pointer">
+      <ul class="hidden md:flex justify-between space-x-8 cursor-pointer " >
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/']">Inicio</li>
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/cabañas']">Cabañas</li>
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/experiencias']">Experiencias</li>
@@ -20,7 +20,7 @@
 
     <!-- Menú móvil  -->
     <div *ngIf="isMenuOpen" class="lg:hidden">
-      <ul class="space-y-4 text-center mt-4">
+      <ul class="space-y-4 text-center mt-4 bg-black/70 p-5 rounded-lg" (click)="toggleMenu()">
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/']">Inicio</li>
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/cabañas']">Cabañas</li>
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/experiencias']">Experiencias</li>

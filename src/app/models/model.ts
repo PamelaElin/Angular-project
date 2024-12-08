@@ -2,12 +2,10 @@ export interface Cabins {
     title: string;
     subtitle: string;
     text: string;
-    imageUrl?: string;
+    imageUrl: string;
   }
   export interface Experiences {
-    title?: string;
-    subtitle?: string;
-    text?: string;
+ 
     imageUrl?: string;
   }
  

@@ -1,14 +1,14 @@
 <section class="containerSection">
 <div class="grid  pb-20 pt-32 text-white w-screen md:px-52 bg-black/35 px-5">
-             <div class="grid  md:grid-cols-2 gap-20  ">
-                    <div class="  rounded-3xl shadow-lg overflow-hidden group w-full bg-black/75">
+             <div class="grid  md:grid-cols-2 gap-20 up  ">
+                    <div class="  rounded-3xl shadow-lg overflow-hidden group w-full bg-black/75 up">
     
                     
-                        <div class="inset-0  flex justify-center items-center text-white p-4">
-                          <div class="text-center">
-                            <h2 class="md:text-3xl text-sm font-bold">EXPERIENCIAS:</h2>
+                        <div class="inset-0  flex justify-center items-center text-white p-4 ">
+                          <div class="px-5">
+                            <h2 class="md:text-3xl text-sm font-bold  ">EXPERIENCIAS:</h2>
                            
-                            <p class="mt-2 font-medium text-md">Nuestras cabañas son el lugar perfecto para una escapada en familia, con amigos o en pareja. Disfruta de actividades como senderismo, paseos en bicicleta, o simplemente relájate en la naturaleza. También puedes combinar trabajo y descanso, aprovechando los espacios tranquilos para hacer home office. Ya sea que busques relajarte con una comida casera o explorar la gastronomía local, aquí encontrarás todo lo necesario para un descanso ideal. ¡Ven y disfruta de momentos únicos!</p>
+                            <p class="mt-2 font-medium text-md ">Nuestras cabañas son el lugar perfecto para una escapada en familia, con amigos o en pareja. Disfruta de actividades como senderismo, paseos en bicicleta, o simplemente relájate en la naturaleza. También puedes combinar trabajo y descanso, aprovechando los espacios tranquilos para hacer home office. Ya sea que busques relajarte con una comida casera o explorar la gastronomía local, aquí encontrarás todo lo necesario para un descanso ideal. ¡Ven y disfruta de momentos únicos!</p>
                           </div>
                         </div>
                       
@@ -17,7 +17,7 @@
 
     @for (item of image; track item.title) {
             
-            <app-card-image   [imageUrl]="item.imageUrl" ></app-card-image>
+            <app-card-image class="up"   [imageUrl]="item.imageUrl" ></app-card-image>
             } 
 
         

@@ -1,11 +1,11 @@
-<header cl>
+<header >
   <nav class="navbar w-full px-6 py-4  text-white font-extrabold text-xl ">
     <div class="flex justify-between items-center ">
       <!-- Logo -->
       <p class="cursor-pointer" [routerLink]="['/']">N.D</p>
 
      
-      <button class="text-2xl lg:hidden " (click)="toggleMenu()">
+      <button class="text-2xl md:hidden " (click)="toggleMenu()">
         <i class="bi bi-list"></i>
       </button>
 
@@ -19,8 +19,8 @@
     </div>
 
     <!-- Menú móvil  -->
-    <div *ngIf="isMenuOpen" class="lg:hidden">
-      <ul class="space-y-4 text-center mt-4 bg-black/70 p-5 rounded-lg" (click)="toggleMenu()">
+    <div *ngIf="isMenuOpen" class="md:hidden responsive  flex justify-center ">
+      <ul class="space-y-4 text-center mt-4 bg-black/70 p-5 rounded-lg backdrop-blur-sm absolute  z-30 w-full " (click)="toggleMenu()">
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/']">Inicio</li>
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/cabañas']">Cabañas</li>
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/experiencias']">Experiencias</li>

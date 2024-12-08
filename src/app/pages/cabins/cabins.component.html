@@ -1,12 +1,12 @@
-<section class="flex h-full w-full items-center justify-center ">
+<section class="flex h-full w-full items-center justify-center containerSection">
     <div class="grid justify-center mb-20 mt-32 text-white w-full md:px-52 px-10">
-        <h1 class="md:text-4xl  text-3xl font-bold mb-4">Cabañas:</h1>
-        <p class="md:text-2xl text-xl mb-6">
+        <h1 class="md:text-4xl  text-3xl font-bold mb-4 textSlideInLeft">Cabañas:</h1>
+        <p class="md:text-2xl text-xl mb-6 textSlideInRight">
         Ofrecemos cabañas en los destinos más tranquilos y hermosos, ideales para desconectarte, disfrutar del deporte y reconectar con la naturaleza
         </p>
         <div class=" flex justify-center ">
             
-            <div class="grid md:grid-cols-2 gap-20  ">
+            <div class="grid md:grid-cols-2 gap-20  up">
     @for (item of titles; track item.title) {
         
         <app-card  [title]="item.title" [subtitle]="item.subtitle"  [text]="item.text" [imageUrl]="item.imageUrl" ></app-card>

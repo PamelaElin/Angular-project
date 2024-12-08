@@ -1,6 +1,6 @@
 <header >
-  <nav class="navbar w-full px-6 py-4  text-white font-extrabold text-xl ">
-    <div class="flex justify-between items-center ">
+  <nav class="navbar w-full    text-white font-extrabold text-xl relative z-30">
+    <div class="flex justify-between items-center absolute z-30 w-full px-6 py-8 ">
       <!-- Logo -->
       <p class="cursor-pointer" [routerLink]="['/']">N.D</p>
 
@@ -19,8 +19,8 @@
     </div>
 
     <!-- Menú móvil  -->
-    <div *ngIf="isMenuOpen" class="md:hidden responsive  flex justify-center ">
-      <ul class="space-y-4 text-center mt-4 bg-black/70 p-5 rounded-lg backdrop-blur-sm absolute  z-30 w-full " (click)="toggleMenu()">
+    <div *ngIf="isMenuOpen" class="md:hidden responsive  flex justify-center  ">
+      <ul class="space-y-8 text-center pt-20 bg-black/70 p-5  backdrop-blur-sm absolute  z-10 w-full h-screen" (click)="toggleMenu()">
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/']">Inicio</li>
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/cabañas']">Cabañas</li>
         <li class="hover:border-b-4 hover:border-white" [routerLink]="['/experiencias']">Experiencias</li>

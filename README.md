@@ -1,6 +1,6 @@
 # Descripción
 
-
+https://natural-deluxe.vercel.app/
 Natural Deluxe es una página web para el alquiler de cabañas de lujo. 
 Ofrece información sobre cabañas, experiencias locales, y una sección de contacto para reservas y consultas. 
 Desarrollado con Angular y Tailwind CSS, combina diseño atractivo y funcionalidad dinámica.
@@ -22,6 +22,9 @@ src/
 │   ├── pages/             # Páginas individuales 
 │   ├── app.component.*    # Componente raíz
 ├── styles.css             # Estilos globales y configuración de Tailwind
+
+![image](https://github.com/user-attachments/assets/ed2aa358-e47f-46a9-a59a-305d951ec521)
+
 
 
 ## LinkedIn:

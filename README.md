@@ -1,6 +1,7 @@
 # Descripción
 
 https://natural-deluxe.vercel.app/
+
 Natural Deluxe es una página web para el alquiler de cabañas de lujo. 
 Ofrece información sobre cabañas, experiencias locales, y una sección de contacto para reservas y consultas. 
 Desarrollado con Angular y Tailwind CSS, combina diseño atractivo y funcionalidad dinámica.
